@@ -1,0 +1,207 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(15, 71, 155); 
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1c0c74; 
+}
+
+
+body{
+    margin: 0;padding: 0;
+      /* background-color: #001232;      */
+     background-color: rgb(5, 1, 22);
+    
+    color: white;
+    font-family: 'Averia Serif Libre', cursive;
+}
+header{
+
+    background-image:url(bannercrop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 159px;
+    display: flex;align-items: center;justify-content: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.815);
+    background-position: fixed;
+    font-family: 'Averia Serif Libre', cursive;
+    text-shadow:0 0 20px rgb(134, 134, 134);
+    font-size: 50px;
+    color:beige;
+}
+
+select {
+    margin: 20px;
+    width: 23%;
+    padding:4px 9px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121) !important;
+    opacity: 100% !important;
+    box-shadow: 0 0 7px grey;
+    color: white;
+}
+option{
+     background-color:rgb(72, 131, 209);   
+}
+.dashed{
+    border: none;
+    border-top: 1.5px dashed white; 
+    width:40%
+}
+.icontext{
+    display: flex;align-items: center;justify-content: center;
+}
+.hlinesmall{
+    height: 2px;
+    border-top: 2px solid #213a69e7;
+    width: 250px;
+    margin: 30px 0 0 0;
+  }
+  .hlinelarge{
+    height: 2px;
+    border-top: 2px solid #213a69e7;
+    width: 350px;
+    margin: 0 0 30px;
+  }
+  .screen{
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 32px;
+    color: whitesmoke;
+    text-shadow: 0 0 #213a69b6;
+    margin: 5px 0;
+  }
+ 
+  .seatChoice{
+    margin: 40px auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+    height: 150px;
+    background-image:url(display.jpg);
+    background-size: cover; background-repeat: no-repeat; background-position: fixed;
+    display: flex; align-items: center;justify-content: center;
+    margin-left: 120px;margin-right: 120px;
+    font-family:'Averia Serif Libre', cursive;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  .price{
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .seatNum{
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+input[type=submit]{
+    display: flex; justify-content: center; align-items:center; 
+    margin: 0 73%; height: 50px; width: 18%;
+    padding: 10px 30px;
+    background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    border-radius: 30px;
+    border: 0px;
+    font-family: 'Averia Serif Libre', cursive;  color: white;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.back{
+  margin: 40px auto;
+  padding: 10px 30px;
+  height: 270px;
+  width: 700px;
+  background: #0c288db2; 
+  border-radius: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input[type=text],input[type=tel]{
+  width: 28%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  background-color: #0c2375b2; color:rgb(255, 255, 255);
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove white;
+  outline: none;
+  font-size: 17px;
+}
+input[type=email]{
+  width: 70%;
+  padding: 5px 10px;
+  margin: 8px 0;
+  background-color: #0c2375b2; color:rgb(255, 255, 255);
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove white;
+  outline: none;
+  font-size: 19px;
+}
+
+
+  label select {
+    height: 50px;
+  }
+
+  ::placeholder { 
+    color: rgb(186, 209, 240);
+   }
+  
+   .myImage{
+     width: 50;
+     height: 50;
+  }
+  table{
+    font-size: 30px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  .menu li {
+    margin-right: 70px;
+    color:black;
+  }
+  
+
+  .menu a {
+    position: relative;
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    color:whitesmoke;
+  }
+  
+  .menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #e7e409, #a00940, #1188ce);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  .menu a:hover::before {
+    transform: scaleX(1.18);
+  }
+     
+  .menu[data-animation="center"] a::before {
+    transform-origin: center;
+  }
+
+
+

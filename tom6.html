@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="booking page.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Booking Page</title>
+</head>
+
+<body>
+  <header>BOOK YOUR TICKETS</header>
+
+  <br><br>
+  <marquee width="100%" direction="right" height="30px" scrollamount="12">
+    <i>In line with the government guidelines and, for your comfort and safety, we are operating at reduced
+      capacity.</i>
+  </marquee>
+  <div align=center>
+    <form name=register action="confirmation.html" method="post" onsubmit="return validateForm()">
+      <label>
+        <select name="movie" style="cursor: not-allowed;" disabled>
+            <option value="2">A Quiet Place II: Silence Is Not Enough</option>
+        </select><br><br>
+        
+        <select name="date" style="cursor: not-allowed;" disabled>
+          <option id="date2"></option>
+          <script> var d= new Date();
+            document.getElementById("date2").innerHTML = (d.getDate()+1)+"-"+(d.getMonth()+1)+"-"+d.getFullYear();</script>
+        </select>
+        
+        <select name="time" style="cursor: not-allowed;" disabled>          
+          <option>9:00 - 11:30 PM</option>          
+        </select><br><br>
+      </label><br>
+      <hr class="dashed">
+      <h2 class="icontext"> <i class="material-icons" style="font-size:34px;color:white">event_seat</i>&ensp;CHOOSE
+        SEATS</h2>
+      <hr class="dashed">
+  </div>
+
+  <div align=center>
+    <div class="hlinesmall"></div>
+    <div class="screen">Screen</div>
+    <div class="hlinelarge"></div>
+    <img src="screen-thumb.png"> <br><br><br>
+    <div class="hlinesmall"></div>
+    <div class="screen"><span style="color: #50e7e7;">Normal</span></div>
+    <div class="hlinelarge">
+    </div>
+
+    <table cellspacing="40">
+
+      <tr>
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td></td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+      </tr>
+
+      <tr>
+        <td>A</td>
+        <td><img class="myImage" id="A1" onclick="changeImage(this.id)" src="seat.png" value="A1"></td>
+        <td><img class="myImage" id="A2" onclick="changeImage(this.id)" src="seat.png" value="A2"></td>
+        <td><img class="myImage" id="A3" onclick="changeImage(this.id)" src="seat.png" value="A3"></td>
+        <td><img class="myImage" id="A4" onclick="changeImage(this.id)" src="seat.png" value="A4"></td>
+        <td><img class="myImage" id="A5" onclick="changeImage(this.id)" src="seat.png" value="A5"></td>
+        <td></td>
+        <td><img class="myImage" id="A6" onclick="changeImage(this.id)" src="seat.png" value="A6"></td>
+        <td><img class="myImage" id="A7" onclick="changeImage(this.id)" src="seat.png" value="A7"></td>
+        <td><img class="myImage" id="A8" onclick="changeImage(this.id)" src="seat.png" value="A8"></td>
+        <td><img class="myImage" id="A9" onclick="changeImage(this.id)" src="seat.png" value="A9"></td>
+        <td><img class="myImage" id="A10" onclick="changeImage(this.id)" src="seat.png" value="A10"></td>
+      </tr>
+
+      <tr>
+        <td>B</td>
+        <td><img class="myImage" id="B1" onclick="changeImage(this.id)" src="seat.png" value="B1"></td>
+        <td><img class="myImage" id="B2" onclick="changeImage(this.id)" src="seat.png" value="B2"></td>
+        <td><img class="myImage" id="B3" onclick="changeImage(this.id)" src="seat.png" value="B3"></td>
+        <td><img class="myImage" id="B4" onclick="changeImage(this.id)" src="seat.png" value="B4"></td>
+        <td><img class="myImage" id="B5" onclick="changeImage(this.id)" src="seat.png" value="B5"></td>
+        <td></td>
+        <td><img class="myImage" id="B6" onclick="changeImage(this.id)" src="seat.png" value="B6"></td>
+        <td><img class="myImage" id="B7" onclick="changeImage(this.id)" src="seat.png" value="B7"></td>
+        <td><img class="myImage" id="B8" onclick="changeImage(this.id)" src="seat.png" value="B8"></td>
+        <td><img class="myImage" id="B9" onclick="changeImage(this.id)" src="seat.png" value="B9"></td>
+        <td><img class="myImage" id="B10" onclick="changeImage(this.id)" src="seat.png" value="B10"></td>
+      </tr>
+
+      <tr>
+        <td>C</td>
+        <td><img class="myImage" id="C1" onclick="changeImage(this.id)" src="seat.png" value="C1"></td>
+        <td><img class="myImage" id="C2" onclick="changeImage(this.id)" src="seat.png" value="C2"></td>
+        <td><img class="myImage" id="C3" onclick="changeImage(this.id)" src="seat.png" value="C3"></td>
+        <td><img class="myImage" id="C4" onclick="changeImage(this.id)" src="seat.png" value="C4"></td>
+        <td><img class="myImage" id="C5" onclick="changeImage(this.id)" src="seat.png" value="C5"></td>
+        <td></td>
+        <td><img class="myImage" id="C6" onclick="changeImage(this.id)" src="seat.png" value="C6"></td>
+        <td><img class="myImage" id="C7" onclick="changeImage(this.id)" src="seat.png" value="C7"></td>
+        <td><img class="myImage" id="C8" onclick="changeImage(this.id)" src="seat.png" value="C8"></td>
+        <td><img class="myImage" id="C9" onclick="changeImage(this.id)" src="seat.png" value="C9"></td>
+        <td><img class="myImage" id="C10" onclick="changeImage(this.id)" src="seat.png" value="C10"></td>
+      </tr>
+
+      <tr>
+        <td>D</td>
+        <td><img class="myImage" id="D1" onclick="changeImage(this.id)" src="seat.png" value="D1"></td>
+        <td><img class="myImage" id="D2" onclick="changeImage(this.id)" src="seat.png" value="D2"></td>
+        <td><img class="myImage" id="D3" onclick="changeImage(this.id)" src="seat.png" value="D3"></td>
+        <td><img class="myImage" id="D4" onclick="changeImage(this.id)" src="seat.png" value="D4"></td>
+        <td><img class="myImage" id="D5" onclick="changeImage(this.id)" src="seat.png" value="D5"></td>
+        <td></td>
+        <td><img class="myImage" id="D6" onclick="changeImage(this.id)" src="seat.png" value="D6"></td>
+        <td><img class="myImage" id="D7" onclick="changeImage(this.id)" src="seat.png" value="D7"></td>
+        <td><img class="myImage" id="D8" onclick="changeImage(this.id)" src="seat.png" value="D8"></td>
+        <td><img class="myImage" id="D9" onclick="changeImage(this.id)" src="seat.png" value="D9"></td>
+        <td><img class="myImage" id="D10" onclick="changeImage(this.id)" src="seat.png" value="D10"></td>
+      </tr>
+
+      <tr>
+        <td>E</td>
+        <td><img class="myImage" id="E1" onclick="changeImage(this.id)" src="seat.png" value="E1"></td>
+        <td><img class="myImage" id="E2" onclick="changeImage(this.id)" src="seat.png" value="E2"></td>
+        <td><img class="myImage" id="E3" onclick="changeImage(this.id)" src="seat.png" value="E3"></td>
+        <td><img class="myImage" id="E4" onclick="changeImage(this.id)" src="seat.png" value="E4"></td>
+        <td><img class="myImage" id="E5" onclick="changeImage(this.id)" src="seat.png" value="E5"></td>
+        <td></td>
+        <td><img class="myImage" id="E6" onclick="changeImage(this.id)" src="seat.png" value="E6"></td>
+        <td><img class="myImage" id="E7" onclick="changeImage(this.id)" src="seat.png" value="E7"></td>
+        <td><img class="myImage" id="E8" onclick="changeImage(this.id)" src="seat.png" value="E8"></td>
+        <td><img class="myImage" id="E9" onclick="changeImage(this.id)" src="seat.png" value="E9"></td>
+        <td><img class="myImage" id="E10" onclick="changeImage(this.id)" src="seat.png" value="E10"></td>
+      </tr>
+
+      <tr class="seatVGap"></tr>
+    </table>
+
+    <div class="hlinesmall"></div>
+    <div class="screen"><span style="color: #50e7e7;">VIP</span></div>
+    <div class="hlinelarge"></div>
+    <table cellspacing="40">
+      <tr>
+        <td>F</td>
+        <td><img class="myImage" id="F1" onclick="changeImage(this.id)" src="seat.png" value="F1"></td>
+        <td><img class="myImage" id="F2" onclick="changeImage(this.id)" src="seat.png" value="F2"></td>
+        <td><img class="myImage" id="F3" onclick="changeImage(this.id)" src="seat.png" value="F3"></td>
+        <td><img class="myImage" id="F4" onclick="changeImage(this.id)" src="seat.png" value="F4"></td>
+        <td><img class="myImage" id="F5" onclick="changeImage(this.id)" src="seat.png" value="F5"></td>
+        <td></td>
+        <td><img class="myImage" id="F6" onclick="changeImage(this.id)" src="seat.png" value="F6"></td>
+        <td><img class="myImage" id="F7" onclick="changeImage(this.id)" src="seat.png" value="F7"></td>
+        <td><img class="myImage" id="F8" onclick="changeImage(this.id)" src="seat.png" value="F8"></td>
+        <td><img class="myImage" id="F9" onclick="changeImage(this.id)" src="seat.png" value="F9"></td>
+        <td><img class="myImage" id="F10" onclick="changeImage(this.id)" src="seat.png" value="F10"></td>
+      </tr>
+
+      <tr>
+        <td>G</td>
+        <td><img class="myImage" id="G1" onclick="changeImage(this.id)" src="seat.png" value="G1"></td>
+        <td><img class="myImage" id="G2" onclick="changeImage(this.id)" src="seat.png" value="G2"></td>
+        <td><img class="myImage" id="G3" onclick="changeImage(this.id)" src="seat.png" value="G3"></td>
+        <td><img class="myImage" id="G4" onclick="changeImage(this.id)" src="seat.png" value="G4"></td>
+        <td><img class="myImage" id="G5" onclick="changeImage(this.id)" src="seat.png" value="G5"></td>
+        <td></td>
+        <td><img class="myImage" id="G6" onclick="changeImage(this.id)" src="seat.png" value="G6"></td>
+        <td><img class="myImage" id="G7" onclick="changeImage(this.id)" src="seat.png" value="G7"></td>
+        <td><img class="myImage" id="G8" onclick="changeImage(this.id)" src="seat.png" value="G8"></td>
+        <td><img class="myImage" id="G9" onclick="changeImage(this.id)" src="seat.png" value="G9"></td>
+        <td><img class="myImage" id="G10" onclick="changeImage(this.id)" src="seat.png" value="G10"></td>
+      </tr>
+
+      <tr>
+        <td>H</td>
+        <td><img class="myImage" id="H1" onclick="changeImage(this.id)" src="seat.png" value="H1"></td>
+        <td><img class="myImage" id="H2" onclick="changeImage(this.id)" src="seat.png" value="H2"></td>
+        <td><img class="myImage" id="H3" onclick="changeImage(this.id)" src="seat.png" value="H3"></td>
+        <td><img class="myImage" id="H4" onclick="changeImage(this.id)" src="seat.png" value="H4"></td>
+        <td><img class="myImage" id="H5" onclick="changeImage(this.id)" src="seat.png" value="H5"></td>
+        <td></td>
+        <td><img class="myImage" id="H6" onclick="changeImage(this.id)" src="seat.png" value="H6"></td>
+        <td><img class="myImage" id="H7" onclick="changeImage(this.id)" src="seat.png" value="H7"></td>
+        <td><img class="myImage" id="H8" onclick="changeImage(this.id)" src="seat.png" value="H8"></td>
+        <td><img class="myImage" id="H9" onclick="changeImage(this.id)" src="seat.png" value="H9"></td>
+        <td><img class="myImage" id="H10" onclick="changeImage(this.id)" src="seat.png" value="H10"></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="seatChoice">
+    <div class="seatPlace">
+      <div class="seatPlaceTxt">Selected seat:</div>
+      <div class="seatNum" id="seatNums">
+
+      </div>
+    </div>
+    <div class="seatPrice">
+      <div class="billTxt">Total Cost:</div>
+      <div class="price" style="display: flex;align-items: center;">Rs. <div id="price"> 0</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Function to select the seats -->
+  <script>
+    const seats = [];
+    function changeImage(id) {
+      var image = document.getElementById(id);
+      if (image.src.match("seat")) {
+        image.src = "select.png";
+        seats.push(id); console.log(seats);
+        document.getElementById("seatNums").innerText = seats.toString();
+      } else {
+        image.src = "seat.png";
+        var x = seats.indexOf(id);
+        seats.splice(x, 1);
+        document.getElementById("seatNums").innerText = seats.toString();
+      }
+      printPrice();
+
+    }
+
+    function printPrice() {
+      let price = 0;
+      for (let y in seats) {
+        var x = seats[y];
+        if (x.includes("A") || x.includes("B") || x.includes("C") || x.includes("D") || x.includes("E")) {
+          price += 200;
+        }
+        else
+          price += 300;
+      }
+      document.getElementById("price").innerText = price;
+
+    }
+
+  </script>
+
+  <div align=center>
+    <hr class="dashed">
+    <h2 class="icontext"> <i class="material-icons" style="font-size:36px;color:white">person</i>&ensp;SHARE YOUR
+      CONTACT DETAILS</h2>
+    <hr class="dashed">
+  </div>
+  <div class="back">
+
+    <input type="text" name="first name" placeholder="First Name" style="margin: 30px; color: white;">
+    <input type="text" name="last name" placeholder="Last Name" style="margin: 30px;"><br>
+    <input type="email" name="email" placeholder="Enter your Email id" style="margin: 30px;"><br>
+    <input type="tel" name="contact number" id="contact number" placeholder="Enter Contact Number"
+      style="margin:30px;"><br>
+  </div>
+
+  <div align=center>
+    <hr class="dashed">
+    <h2 class="icontext"> <i class="material-icons" style="font-size:36px;color:white">payment</i>&ensp;PAYMENT OPTION
+    </h2>
+    <hr class="dashed">
+  </div>
+  <div class="back" style="height: 480px; color:#bdd1d1;">
+    <p><br>Select The Payment Mode:&emsp;
+      <input type="radio" id="credit card" name="pay">
+      <label for="credit card" style="text-indent: 50px;">Credit Card</label>
+      &emsp;<input type="radio" id="debit pay" name="pay">
+      <label for="debit card">Debit Card</label>
+      &emsp;<input type="radio" id="google pay" name="pay">
+      <label for="google pay">Google Pay</label>
+    </p><br>
+    <p>
+      Enter Your Card Details<br><br>
+      <label for="card number">Card Number</label>
+      <input type="text" id="card number" name="card number" style="outline: auto;width: 90%;"><br><br>
+      <label for="name">Name on the Card</label>
+      <input type="text" id="name" name="name" style="outline: auto;width: 90%;"><br><br>
+      Expiry date: &ensp;<input type="date" name="expiry date"><br><br>
+      Card Security Code: &ensp;<input type="password" name="cvv" id="cvv"
+        style="background-color: #0c2375b2; color:rgb(255, 255, 255); border-color: rgb(253, 253, 253); border-style: solid;">
+
+
+      <!-- checkbox to show the cvv
+            and the function showCvv to show the cvv when checkbox is ticked -->
+
+      &ensp;<input type="checkbox" onclick="myFunction()">Show CVV
+      <script>
+        function myFunction() {
+          var x = document.getElementById("cvv");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+      </script><br><br><br>
+
+      <input type="checkbox" checked="checked">I agree to the Terms and Conditions
+
+    </p>
+  </div>
+  <div class="btn">
+    <!-- validates the form : checks if all input is given -->
+    <script>
+      function validateForm() {
+        var fields = ["movie", "date", "time", "first name", "last name", "email", "contact number", "pay", "card number", "name", "expiry date", "cvv"]
+        var i, l = fields.length;
+        var fieldname;
+        for (i = 0; i < l; i++) {
+          fieldname = fields[i];
+          if (document.forms["register"][fieldname].value == "") {
+            alert(fieldname + " can not be empty");
+            return false;
+          }
+        }
+        //validates card number
+        let x = document.getElementById("card number").value;
+        if (isNaN(x) == true || x.toString().length != 16) {
+          alert("The card number is invalid");
+          return false;
+        }
+
+        //validates cvv
+        let y = document.getElementById("cvv").value;
+        if (isNaN(y) == true || y.toString().length != 3) {
+          alert("The cvv is invalid");
+          return false;
+        }
+
+        //validates contact number
+        let z = document.getElementById("contact number").value;
+        if (isNaN(z) == true || z.toString().length != 10) {
+          alert("The contact number is invalid");
+          return false;
+        }
+
+        //validates is seat is selected
+        if(seats==0){                                                                      
+          alert("select a seat");
+          return false;
+        }
+
+        //validates email id
+        var e=document.register.email.value;
+         atpos = e.indexOf("@");
+         dotpos = e.lastIndexOf(".");
+         if (atpos < 1 || ( (dotpos - atpos) < 2 ))
+          {
+            alert("Please enter correct email ID");
+            return false;
+          }
+
+        return true;
+      }
+    </script>
+
+    <input type="submit" value="Confirm">
+  </div>
+  <br><br></form>
+
+ 
+  <footer style="background: rgb(0, 0, 0);margin: 0;  text-align: center;padding:0px 0px; height: 325px;">
+    <img src="logo.jpg"alt="logo" align="center" height="200"width="auto">
+    <ul class="menu" data-animation="center" >
+      <li>
+        <a  href="index.html">
+         HOME
+        </a>
+      </li>
+      <li>
+        <a href="UID.html">
+         NOW SHOWING
+        </a>
+      </li>
+      <li>
+        <a href="upcoming.html">
+         UPCOMING MOVIES
+        </a>
+      </li>
+      <li>
+        <a href="about.html">
+          ABOUT US
+        </a>
+      </li>
+      <li>
+        <a href="FAQS.html">
+          FAQS
+        </a>
+      </li>
+      <li>
+        <a href="customercare.html">
+        CONTACT US
+        </a>
+      </li>
+    </ul>
+
+     <div>
+        <p style="opacity:0.5;color:white";>
+          &copy;Copyrights Chase Cinemas. All rights reserved.
+      </p>
+  </div>
+</footer>  
+</body>
+
+</html>

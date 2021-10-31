@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head><title>CINEMAS - CUSTOMER CARE</title> 
+        <style>
+           ::-webkit-scrollbar {
+                      width: 10px;}
+          ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px rgb(12, 12, 12); 
+            border-radius: 10px;
+            }
+          ::-webkit-scrollbar-thumb {
+             background: rgb(10, 10, 10); 
+             border-radius: 10px;
+             }
+           ::-webkit-scrollbar-thumb:hover {
+              background: #515052; 
+            }         a{
+                text-decoration:none;
+                color: white;
+              }
+              body{
+                  background-color: rgb(36, 23, 23);
+
+
+              }
+              input[type=text],input[type=email],textarea {
+                  padding: 10px;
+                  margin:10px 0; 
+                  box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+                  border-radius:10px;
+                  width: 25%;
+                  
+              }
+
+            input[type=radio] {
+                    
+                    padding-top: 20px;
+
+                }
+            input[type=submit],input[type=reset] {
+                    appearance:none;
+                    -webkit-appearance:none;
+                    padding:10px;
+                    border:none;
+                    background:linear-gradient(rgb(61, 60, 60),rgb(0, 0, 0));
+                    color:#fff;
+                    font-weight:600;
+                    border-radius:5px;
+                    width:20%;
+                    cursor:pointer;
+
+
+
+}
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+  }
+  .menu li {
+    margin-right: 70px;
+    color:black;
+  }
+  
+
+  .menu a {
+    position: relative;
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    color:whitesmoke;
+  }
+  
+  .menu a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #0c0c0c, #c04975, #e21818);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease-in-out;
+  }
+  .menu a:hover::before {
+    transform: scaleX(1);
+  }
+  
+        </style>
+        <script>
+            
+        function Emailvalidate()
+        {
+            var emailID = document.myForm.email.value;
+            atpos = emailID.indexOf("@");
+            dotpos = emailID.lastIndexOf(".");
+            if (atpos < 1 || ( (dotpos - atpos) < 2 )){
+                alert("Please enter correct email ID")
+             }
+            let z= document.myForm.phone.value;
+                if (isNaN(z)== true || z.toString().length!= 10)
+                {
+                  alert("The contact number is invalid");
+                  return false;
+                }
+                
+                return true;
+        }
+        
+
+
+
+
+        </script>
+    
+    </head>
+    <body style="background-color:black;margin: 0px 50px;">
+        <h1 style="color: crimson;text-align: center;">
+            <img src="logo.jpg" width ="8%" height="5%"><br/>
+            CUSTOMER CARE </br>
+        
+       </h1> <br>
+        <br>
+        <h2 style="color: crimson;"> FREQUENTLY ASKED QUESTIONS: </h2>
+        <p style="color: ivory;font-size:larger;">
+            If you have a question , we may already have an answer</br>
+            <br>
+            <a href="FAQS.html" > VIEW OUR FAQS </a>
+        
+        </p>
+        <br>
+        <h2 style="color: crimson;"> CONTACT US </h2>
+        <p style="color: ivory;font-size: larger;">
+            If you have any other queries , or wish to leave us your valuable feedback , please fill the below form.
+            <form method="post" name="myForm" onsubmit=" return Emailvalidate()" action="thank_you.html">
+                <p style="color: crimson;"><b>NAME:</b></br>
+                    <input type="text" id= "username" name ="Name" placeholder="Name" required><br></p>
+                    
+                <br>
+                <p style="color: crimson;"><b>EMAIL ID:</b></br>
+                    <input type="email" name ="email" placeholder="Email Id" required><br>
+                 
+                </p>
+                <br>
+                <p style="color: crimson;"><b> PHONE NUMBER :</b><br>
+                    <input type="text" id="phone" name ="number" placeholder="Phone Number" required><br>
+                </p>
+                <br>
+                <p style="color: crimson;"><b> QUERIES/FEEDBACK :</b><br>
+                    <br>
+                    <textarea name = "feedback" cols="50 " rows="8" required></textarea><br>
+                </p>
+                <br>
+                <p style="color: crimson;"><b> HOW WAS YOUR EXPERIENCE WITH US ?</b><br>
+                    <br>
+                    <input type="radio" name="r1" value="good"/>GOOD
+                    <br>
+                    <input type="radio" name="r2" value="avg"/>AVERAGE 
+                    <br>
+                    <input type="radio" name="r3" value="bad"/>BAD 
+                    <br>
+
+
+                </p>
+                <br>
+                <input type="submit" name="Submit" value="Submit" />
+                <input type="reset" name="Reset" value = "Reset" />
+
+
+
+
+            </form>
+        </p>
+        <br/> <br/> <br/><br/> <br/><br/> <br/><br/> <br/>
+        <footer style="background: #030303b2;margin: 0;  text-align: center;padding: 25px 1px;opacity: 0.9;">
+            <br/>
+            <img src="logo.png"alt="logo" align="center" height="150"width="auto"><br/><br/><br/>
+            <ul class="menu"  >
+              <li style="margin-left: 89px;">
+                <a  href="index.html">
+                 HOME
+                </a>
+              </li>
+              <li>
+                <a href="UID.html">
+                 NOW SHOWING
+                </a>
+              </li>
+              <li>
+                <a href="booking_page.html">
+                BOOK NOW
+                </a>
+              </li>
+              <li>
+                <a href="upcoming.html">
+                  UPCOMING MOVIES
+                </a>
+              </li>
+              <li>
+                <a href="about.html">
+                  ABOUT US
+                </a>
+              </li>
+              <li>
+                <a href="FAQS.html">
+                  FAQS
+                </a>
+              </li>
+              
+            </ul>
+        
+            <div style="color:white;opacity: 0.5;">
+               
+                 <br/> &copy;Copyrights Chase Cinemas. All rights reserved.
+              
+          </div>
+        </footer> 
+    </body>
+</html>
